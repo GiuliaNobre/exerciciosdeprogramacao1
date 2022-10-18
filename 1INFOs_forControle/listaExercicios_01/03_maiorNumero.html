@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que peça ao usuário para informar cinco números.
+    No final, apresente o maior número informado pelo usuário.
+    */
+
+    //ENTRADA
+const listaNumeros = [];
+
+    //PROCESSAMENTO]
+for (let controle = 0; controle <= 5; controle++) {
+    listaNumeros.push(Number(prompt("Informe um número")))
+}
+
+    //SAÍDA
+    document.write(`Lista: ${listaNumeros.join(", ")} <br> Maior número: ${listaNumeros.reverse((a, b) => a - b).join(", ")[0]}`);
+</script>
